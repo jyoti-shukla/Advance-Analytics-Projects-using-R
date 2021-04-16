@@ -1,0 +1,6 @@
+In this assignment, find the missing values for the FAT attribute for the rows in the CEREAL  downloadfile that are NULL using a decision tree in R.
+
+Yes, the headers are missing. Think back to your course on Data Mining and Data Understanding phase of CRISP-DM. What is the value of metadata? What techniques do you think you could employ to determine what the columns of data represent?
+
+Use set.seed(123)
+Use the predict() function on the data with the missing values once you have completed your model, and enter  the values for the fat for each row in the quiz titled Cereal Fat, and copy and paste your R code into this assignment submission.

@@ -1,0 +1,20 @@
+Using the HOUSEDATA_2 data set, create a simple and multiple linear regression model. Do not split your data into training and test data sets. Use the entire data set for the models.
+
+Use set.seed(123)
+
+First, create a multiple linear regression model using all attributes, predicting the PRICE attribute. Be sure to perform scatterplot analysis to gain an understanding of the relationships between the attributes (remember Data Understanding phase from Data Mining, particularly relationship profiling). 
+
+Review the results of the model.
+
+Next, create two more linear regression models: 
+
+Simple linear regression with the sqft_living variable. 
+Multiple linear regression with 2 variables, sqlft_living and grade.
+Compare results of all 3 models using technique discussed in lecture and example.
+
+Use the predict function with interval='confidence' with all 3 models, individually. For the data frame, use the following values, as required:
+
+sqft_living=2160
+grade=6
+condition=4
+

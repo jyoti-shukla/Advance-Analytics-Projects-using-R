@@ -1,0 +1,24 @@
+Using the GRADES  downloaddata set, predict the value of "admit", using all other variables in the data as potential predictors, build a 
+
+Decision Tree (using ctree function in Party in R) 
+Random Forest (using randomForest in randomForest in R)
+Logistic Regression (using glm in R core)
+Use "set.seed(1234)" after you load your data so that we all get the same answers.
+
+Do not split your data into training and test data. Use the entire data set to build your models.
+
+In the Random Forest, for the prediction code, do not use the "data =" and then your data set name in the code. 
+
+[variable] <- predict([variable for RF model], [variable for data set], type = "class")
+
+Example:
+
+Correct
+
+predrf <- predict(rf, mydata, type = "class")
+
+Incorrect
+
+predrf <- predict(rf, data = mydata, type = "class")
+
+After using all potential variables as predictors, remove the GRE variable. Rerun all models (Version 2) using the remaining variables. 

@@ -1,0 +1,11 @@
+Once you have finished building your kmeans() cluster, complete the Wine Data quiz, answering questions about your cluster results. 
+
+A couple of notes you will need to do in the activity that are different than what I did in the demo. First, you will want to NULL the CLASS attribute in the wine data set before doing anything with the data. So, rather than using the na.omit function used in the demo to remove missing values, you want to use
+
+[dataset variable name]$class <- NULL
+
+So, if your dataset variable is "df" then it would be df$class <- NULL.
+
+The reason we remove this is because it contains the actual target variable - which is the "group" we want the wine clustered into. Remember, clustering is an unsupervised machine learning technique and is used for data sets that are unlabled - where you don't know the value of your target variable. 
+
+The second thing I want you to do is save the original data set WITH the CLASS attribute into another variable. At the end of your code, use this variable along with your cluster to build a confusion matrix and see how close kmeans() was able to cluster the data. table(mycluster$cluster,orig$class) will do this, if your cluster is named "mycluster" and your original data set with the CLASS attribute is named orig. 
